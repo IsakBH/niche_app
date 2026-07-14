@@ -91,13 +91,14 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: Center(
         child: Container(
-          height: 100,
-          width: 100,
+          height: double.infinity,
+          width: double.infinity,
+          padding: EdgeInsets.all(50.0),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(25.0),
-            color: Colors.amber,
+            color: Colors.red,
           ),
-          child: Text('Hello', style: TextStyle(color: Colors.white)),
+          child: Text('Hello $_counter', style: TextStyle(color: Colors.white)),
         ),
       ),
       floatingActionButton: FloatingActionButton(
