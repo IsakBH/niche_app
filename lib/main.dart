@@ -91,15 +91,31 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: Center(
         child: Container(
-          height: double.infinity,
+          color: Colors.blue,
           width: double.infinity,
-          padding: EdgeInsets.all(50.0),
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(25.0),
-            color: Colors.red,
-          ),
-          child: Text('Hello $_counter', style: TextStyle(color: Colors.white)),
-        ),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Container(
+                        height: 100.0,
+                        width: 100.0,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(25.0),
+                          color: Colors.red,
+                        ),
+                      ),
+                      Container(
+                        height: 100.0,
+                        width: 100.0,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(25.0),
+                          color: Colors.red,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
@@ -110,4 +126,3 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
-
