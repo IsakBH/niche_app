@@ -89,8 +89,8 @@ class _MyHomePageState extends State<MyHomePage> {
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
       ),
-      body: Image.network(
-        "https://i.scdn.co/image/ab67616d0000b273e9a4f331829abd144ed69cbe",
+      body: Image.asset(
+        './assets/påulriken.jpeg',
         height: double.infinity,
         fit: BoxFit.cover,
       ),
