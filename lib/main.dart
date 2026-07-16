@@ -91,11 +91,16 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: Stack(
         children: [
-          Image.asset(
-            'assets/images/paulriken.jpeg',
-            fit: BoxFit.cover,
+          Image.asset('assets/images/paulriken.jpeg', fit: BoxFit.cover, height: 300),
+          SizedBox(
+            height: 300,
+            child: Center(
+              child: Text(
+                'Niche og tøff tur',
+                style: TextStyle(color: Colors.white, backgroundColor: Colors.amber),
+              ),
+            ),
           ),
-          Text('Niche og tøff tur', style: TextStyle(color: Colors.red)),
         ],
       ),
       floatingActionButton: FloatingActionButton(
