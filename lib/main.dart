@@ -90,15 +90,15 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Image.asset(
-        './assets/påulriken.jpeg',
+        'assets/images/paulriken.jpeg',
         height: double.infinity,
         fit: BoxFit.cover,
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
         tooltip: 'Increment',
-        child: const Icon(Icons.add),
         backgroundColor: Colors.amber,
+        child: const Icon(Icons.add),
       ),
     );
   }
