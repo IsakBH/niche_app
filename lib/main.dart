@@ -17,7 +17,18 @@ class MyApp extends StatelessWidget {
           brightness: Brightness.dark,
         ),
       ),
-      home: Scaffold(),
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Hello, this is an AppBar'),
+          centerTitle: true,
+          leading: Icon(Icons.login),
+          actions: [
+            Icon(Icons.notification_add_rounded),
+            Icon(Icons.settings),
+          ],
+          backgroundColor: Colors.teal,
+        ),
+      ),
     );
   }
 }
