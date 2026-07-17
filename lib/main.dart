@@ -86,33 +86,11 @@ class _MyHomePageState extends State<MyHomePage> {
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
       ),
-      body: Container(
-        child: Stack(
-          children: [
-            SizedBox(
-              height: 300,
-              child: Center(
-                child: Text(
-                  'Niche og tøff tur $_counter',
-                  style: TextStyle(
-                    color: Colors.white,
-                    backgroundColor: Colors.amber,
-                  ),
-                ),
-              ),
-            ),
-            ListTile(
-              leading: Icon(Icons.man),
-              tileColor: Colors.red,
-              title: Text('Hei hei dette er en ListTile'),
-              trailing: Icon(Icons.woman),
-              onTap: () {
-                _incrementCounter();
-                print("Counteren har gått opp med én :)");
-              },
-            ),
-          ],
-        ),
+      body: Wrap(
+        children: [
+          Text('ølkjasdfølkjasdføjjeoj'),
+          Text('ølkjasdfølkjasdføjjeoj'),
+        ],
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
