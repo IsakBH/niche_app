@@ -1,4 +1,5 @@
 # niche_app
+Jeg følger [denne guiden](https://www.youtube.com/watch?v=3kaGC_DrUnw) for å bli kjent med og lære meg Flutter. Det er ganske gøy så langt!
 
 A new Flutter project.
 
