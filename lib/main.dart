@@ -29,6 +29,7 @@ class MyApp extends StatelessWidget {
               },
               child: Icon(Icons.add),
             ),
+            SizedBox(height: 10.0),
             FloatingActionButton(
               onPressed: () {
                 print("Test men det er den andre knappen ;)");
