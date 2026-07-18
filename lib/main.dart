@@ -19,11 +19,32 @@ class MyApp extends StatelessWidget {
       ),
       home: Scaffold(
         appBar: AppBar(title: Text('Isak Henriksen'), centerTitle: true),
+
+        floatingActionButton: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            FloatingActionButton(
+              onPressed: () {
+                print("Test");
+              },
+              child: Icon(Icons.add),
+            ),
+            FloatingActionButton(
+              onPressed: () {
+                print("Test men det er den andre knappen ;)");
+              },
+              child: Icon(Icons.add),
+            ),
+          ],
+        ),
+
         bottomNavigationBar: NavigationBar(
           destinations: [
             NavigationDestination(icon: Icon(Icons.home), label: "Home"),
             NavigationDestination(icon: Icon(Icons.tune), label: "Tune"),
           ],
+          selectedIndex: 0,
+          onDestinationSelected: (int value) {},
         ),
       ),
     );
