@@ -39,6 +39,8 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(title: Text('Isak Henriksen'), centerTitle: true),
 
+      body: current_index == 0 ? Center(child: Text("Hello"),) : Center(child: Text("Goodbye"),),
+
       bottomNavigationBar: NavigationBar(
         destinations: [
           NavigationDestination(icon: Icon(Icons.home), label: "Home"),
