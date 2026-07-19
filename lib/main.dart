@@ -12,6 +12,8 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
+  int selected_index = 0;
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -32,7 +34,14 @@ class _MyAppState extends State<MyApp> {
         bottomNavigationBar: NavigationBar(destinations: [
           NavigationDestination(icon: Icon(Icons.home), label: "Home"),
           NavigationDestination(icon: Icon(Icons.person), label: "Profile"),
-        ]),
+        ],
+        selectedIndex: selected_index,
+        onDestinationSelected: (int value) {
+          setState(() {
+            selected_index = value;
+          });
+        },
+        ),
       ),
     );
   }
