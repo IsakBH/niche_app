@@ -18,25 +18,9 @@ class MyApp extends StatelessWidget {
         ),
       ),
       home: Scaffold(
-        appBar: AppBar(title: Text('Isak Henriksen'), centerTitle: true),
-
-        floatingActionButton: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            FloatingActionButton(
-              onPressed: () {
-                print("Test");
-              },
-              child: Icon(Icons.add),
-            ),
-            SizedBox(height: 10.0),
-            FloatingActionButton(
-              onPressed: () {
-                print("Test men det er den andre knappen ;)");
-              },
-              child: Icon(Icons.add),
-            ),
-          ],
+        appBar: AppBar(
+          title: Text('Isak Henriksen'), 
+          centerTitle: true,
         ),
 
         bottomNavigationBar: NavigationBar(
