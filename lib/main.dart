@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:niche_app/views/widget_tree.dart';
 import 'package:niche_app/widgets/navbar_widget.dart';
 
 void main() {
@@ -19,19 +20,12 @@ class _MyAppState extends State<MyApp> {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
-          seedColor: Colors.teal,
+          seedColor: Colors.green,
           brightness: Brightness.dark,
           ),
       ),
 
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text("Isak Henriksen"),
-          centerTitle: true,
-        ),
-
-        bottomNavigationBar: NavbarWidget(),
-        ),
+      home: WidgetTree(),
       );
   }
 }
