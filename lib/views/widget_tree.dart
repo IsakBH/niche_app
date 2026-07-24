@@ -1,5 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:niche_app/widgets/navbar_widget.dart';
+import 'package:niche_app/views/pages/home_page.dart';
+import 'package:niche_app/views/pages/profile_page.dart';
+import 'package:niche_app/views/widgets/navbar_widget.dart';
+
+List<Widget> pages = [
+  HomePage(),
+  ProfilePage()
+];
 
 class WidgetTree extends StatelessWidget {
   const WidgetTree({Key? key}) : super(key: key);
@@ -11,7 +18,7 @@ class WidgetTree extends StatelessWidget {
           title: Text("Isak Henriksen"),
           centerTitle: true,
         ),
-
+        body: pages.elementAt(0),
         bottomNavigationBar: NavbarWidget(),
         );
   }
