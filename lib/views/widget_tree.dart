@@ -12,7 +12,11 @@ class WidgetTree extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Isak Henriksen"), centerTitle: true),
+      appBar: AppBar(
+        title: Text("Isak Henriksen"),
+        centerTitle: true,
+        backgroundColor: Color.fromRGBO(28, 34, 28, 1),
+      ),
       body: ValueListenableBuilder(
         valueListenable: selectedPageNotifier,
         builder: (context, selectedpage, child) {
