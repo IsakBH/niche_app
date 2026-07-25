@@ -15,7 +15,7 @@ class WidgetTree extends StatelessWidget {
       appBar: AppBar(
         title: Text("Isak Henriksen"),
         centerTitle: true,
-        backgroundColor: Color.fromRGBO(28, 34, 28, 1),
+        //backgroundColor: Color.fromRGBO(28, 34, 28, 1),
       ),
       body: ValueListenableBuilder(
         valueListenable: selectedPageNotifier,
