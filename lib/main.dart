@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:niche_app/views/data/notifiers.dart';
 import 'package:niche_app/views/widget_tree.dart';
 
 void main() {
@@ -21,10 +22,13 @@ class _MyAppState extends State<MyApp> {
         colorScheme: ColorScheme.fromSeed(
           seedColor: Colors.teal,
           brightness: Brightness.light,
-          ),
+
+
+
+        ),
       ),
 
       home: WidgetTree(),
-      );
+    );
   }
 }

@@ -15,6 +15,25 @@ class WidgetTree extends StatelessWidget {
       appBar: AppBar(
         title: Text("Isak Henriksen"),
         centerTitle: true,
+        actions: [
+          IconButton(
+            onPressed: () {
+              isDarkModeNotifier.value = !isDarkModeNotifier.value;
+            },
+            icon: ValueListenableBuilder(
+              valueListenable: isDarkModeNotifier,
+              builder: (BuildContext context, bool isDarkMode, Widget? child) {
+                if (isDarkMode) {
+                  // hvis dark mode er skrudd på
+                  return Icon(Icons.light_mode);
+                } else {
+                  // hvis dark mode er skrudd av, altså, hvis det er light mode
+                  return Icon(Icons.dark_mode);
+                }
+              },
+            ),
+          ),
+        ],
         //backgroundColor: Color.fromRGBO(28, 34, 28, 1),
       ),
       body: ValueListenableBuilder(
