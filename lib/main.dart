@@ -1,3 +1,5 @@
+// ignore_for_file: library_private_types_in_public_api
+
 import 'package:flutter/material.dart';
 import 'package:niche_app/views/data/notifiers.dart';
 import 'package:niche_app/views/widget_tree.dart';
