@@ -7,7 +7,7 @@ import 'package:niche_app/views/widgets/navbar_widget.dart';
 List<Widget> pages = [HomePage(), ProfilePage()];
 
 class WidgetTree extends StatelessWidget {
-  const WidgetTree({Key? key}) : super(key: key);
+  const WidgetTree({super.key});
 
   @override
   Widget build(BuildContext context) {
