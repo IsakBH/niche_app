@@ -15,74 +15,79 @@ class _ProfilePageState extends State<ProfilePage> {
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
-          child: Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Column(
-              children: [
-                TextField(
-                  controller: controller,
-                  decoration: InputDecoration(border: OutlineInputBorder()),
-                  onChanged: (value) {
-                    setState(() {});
-                  },
-                ),
-                Text(controller.text),
-          
-                Checkbox(
-                  tristate: true,
-                  value: isChecked,
-                  onChanged: (bool? value) {
-                    setState(() {
-                      isChecked = value;
-                    });
-                  },
-                ),
-                CheckboxListTile(
-                  tristate: true,
-                  value: isChecked,
-                  title: Text("Click me"),
-                  onChanged: (bool? value) {
-                    setState(() {
-                      isChecked = value;
-                    });
-                  },
-                ),
-          
-                Switch(
-                  value: isSwitched,
-                  onChanged: (bool value) {
-                    setState(() {
-                      isSwitched = value;
-                    });
-                  },
-                ),
-          
-                SwitchListTile(
-                  value: isSwitched,
-                  title: Text("Switch me"),
-                  onChanged: (value) {
-                    setState(() {
-                      isSwitched = value;
-                    });
-                  },
-                ),
-          
-                Slider(
-                  value: sliderValue,
-                  max: 100,
-                  divisions: 10,
-                  onChanged: (double value) {
-                    setState(() {
-                      sliderValue = value;
-                    });
-                    print(sliderValue);
-                  },
-                ),
-                
-                Image.asset('assets/images/paulriken.jpeg'),
-              ],
+      child: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Column(
+          children: [
+            TextField(
+              controller: controller,
+              decoration: InputDecoration(border: OutlineInputBorder()),
+              onChanged: (value) {
+                setState(() {});
+              },
             ),
-          ),
-        );
+            Text(controller.text),
+
+            Checkbox(
+              tristate: true,
+              value: isChecked,
+              onChanged: (bool? value) {
+                setState(() {
+                  isChecked = value;
+                });
+              },
+            ),
+            CheckboxListTile(
+              tristate: true,
+              value: isChecked,
+              title: Text("Click me"),
+              onChanged: (bool? value) {
+                setState(() {
+                  isChecked = value;
+                });
+              },
+            ),
+
+            Switch(
+              value: isSwitched,
+              onChanged: (bool value) {
+                setState(() {
+                  isSwitched = value;
+                });
+              },
+            ),
+
+            SwitchListTile(
+              value: isSwitched,
+              title: Text("Switch me"),
+              onChanged: (value) {
+                setState(() {
+                  isSwitched = value;
+                });
+              },
+            ),
+
+            Slider(
+              value: sliderValue,
+              max: 100,
+              divisions: 10,
+              onChanged: (double value) {
+                setState(() {
+                  sliderValue = value;
+                });
+                print(sliderValue);
+              },
+            ),
+
+            GestureDetector(
+              onTap: () {
+                print("Image selected");
+              },
+              child: Image.asset('assets/images/paulriken.jpeg'),
+            ),
+          ],
+        ),
+      ),
+    );
   }
 }
