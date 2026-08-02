@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:niche_app/views/data/notifiers.dart';
-import 'package:niche_app/views/widget_tree.dart';
+import 'package:niche_app/views/pages/welcome_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -30,7 +30,7 @@ class _MyAppState extends State<MyApp> {
             ),
           ),
 
-          home: WidgetTree(),
+          home: WelcomePage(),
         );
       },
     );
