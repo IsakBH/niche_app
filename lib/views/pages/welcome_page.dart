@@ -3,7 +3,7 @@ import 'package:niche_app/views/widget_tree.dart';
 import 'package:niche_app/views/widgets/hero_widget.dart';
 
 class WelcomePage extends StatelessWidget {
-  const WelcomePage({Key? key}) : super(key: key);
+  const WelcomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
